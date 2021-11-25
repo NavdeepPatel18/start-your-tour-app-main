@@ -34,7 +34,7 @@ app.use(
   );
 
   mongoose
-  .connect(`mongodb+srv://USER:${process.env.MONGO_PASSWORD}@syt.nrodu.mongodb.net/${process.env.MONGO_DB}?retryWrites=true&w=majority`,
+  .connect(`mongodb+srv://${process.env.MONGO_USER}:${process.env.MONGO_PASSWORD}@syt.nrodu.mongodb.net/${process.env.MONGO_DB}?retryWrites=true&w=majority`,
     {
       useNewUrlParser: true,
       useUnifiedTopology: true,
